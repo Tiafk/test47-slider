@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="main" id="app">
+    <div class="wrapper-slider__title">
+      <ul class="title-navigation">
+        <a class="nav-link active-link" href="#popular">Популярные товары</a>
+        <a class="nav-link" href="#recently-bought">Недавно купили</a>
+        <a class="nav-link" href="#interested">Вас может заинтересовать</a>
+      </ul>
+    </div>
+    <div class="tabs show" id="popular">
+      <button class="btn-slider prev">
+        <img src="./img/лево.svg" alt="#">
+      </button>
+      <button class="btn-slider next">
+        <img src="./img/право.svg" alt="#">
+      </button>
+      <!-- <button class="swiper-button-next"></button>
+      <button class="swiper-button-prev"></button> -->
+      <div class="wrapper-slider">
+        <div class="wrapper-slider__slider">
+          <div class="wrapper-slider__slider-line">
+              <div class="slider-card">
+                <div class="image-slider swiper-container">
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/нет_фото.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/нет_фото.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/нет_фото.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/нет_фото.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-5" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/нет_фото.svg" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="mark-container">
+                    <div class="mark favorites">
+                      <img src="./img/Избранное.svg" alt="#">
+                    </div>
+                    <div class="mark scales">
+                      <img src="./img/Сравнение.svg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text">Тарелка керамическая ручной работы ⌀ 12</div>
+                <div class="card-price">
+                  <div class="new">600 ₽</div>
+                  <div class="old">810 ₽</div>
+                </div>
+                <div class="card-finished">
+                  <div class="counter-wrapper">
+                    <div class="counter" data-counter>
+                      <button class="btn-counter minus">
+                        <img src="./img/minus.svg" alt="#">
+                      </button>
+                      <div class="counter__input"><input type="text" disabled value="0"></div>
+                      <button class="btn-counter plus">
+                        <img src="./img/plus.svg" alt="#">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="basket">
+                    <img src="./img/корзина.svg" alt="#">
+                    <p class="text">В корзину</p>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="image-slider swiper-container">
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img//цветок.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img//цветок.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img//цветок.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img//цветок.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-5" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img//цветок.svg" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="mark-container">
+                    <div class="mark favorites">
+                      <img src="./img/Избранное.svg" alt="#">
+                    </div>
+                    <div class="mark scales">
+                      <img src="./img/Сравнение.svg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text">Кашпо для цветов керамическое СИМПЛГРЕЙ</div>
+                <div class="card-price">
+                  <div class="new">450 ₽</div>
+                </div>
+                <div class="card-finished">
+                  <div class="counter-wrapper">
+                    <div class="counter" data-counter>
+                      <button class="btn-counter minus">
+                        <img src="./img/minus.svg" alt="#">
+                      </button>
+                      <div class="counter__input"><input type="text" disabled value="0"></div>
+                      <button class="btn-counter plus">
+                        <img src="./img/plus.svg" alt="#">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="basket">
+                    <img src="./img/корзина.svg" alt="#">
+                    <p class="text">В корзину</p>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="image-slider swiper-container">
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-5" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="mark-container">
+                    <div class="mark favorites">
+                      <img src="./img/Избранное.svg" alt="#">
+                    </div>
+                    <div class="mark scales">
+                      <img src="./img/Сравнение.svg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text">Умные часы SMARTWATCH XM 109 черный</div>
+                <div class="card-price">
+                  <div class="new">12 999 ₽</div>
+                </div>
+                <div class="card-finished">
+                  <div class="counter-wrapper">
+                    <div class="counter" data-counter>
+                      <button class="btn-counter minus">
+                        <img src="./img/minus.svg" alt="#">
+                      </button>
+                      <div class="counter__input"><input type="text" disabled value="0"></div>
+                      <button class="btn-counter plus">
+                        <img src="./img/plus.svg" alt="#">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="basket">
+                    <img src="./img/корзина.svg" alt="#">
+                    <p class="text">В корзину</p>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="image-slider swiper-container">
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/кольцо.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/кольцо.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/кольцо.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/кольцо.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-5" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/кольцо.svg" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="mark-container">
+                    <div class="mark favorites">
+                      <img src="./img/Избранное.svg" alt="#">
+                    </div>
+                    <div class="mark scales">
+                      <img src="./img/Сравнение.svg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text">Золотое кольцо МАЛИКА с аметистом и фианитами</div>
+                <div class="card-price">
+                  <div class="new">15 700 ₽</div>
+                </div>
+                <div class="card-finished">
+                  <div class="counter-wrapper">
+                    <div class="counter" data-counter>
+                      <button class="btn-counter minus">
+                        <img src="./img/minus.svg" alt="#">
+                      </button>
+                      <div class="counter__input"><input type="text" disabled value="0"></div>
+                      <button class="btn-counter plus">
+                        <img src="./img/plus.svg" alt="#">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="basket">
+                    <img src="./img/корзина.svg" alt="#">
+                    <p class="text">В корзину</p>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="image-slider swiper-container">
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-5" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="mark-container">
+                    <div class="mark favorites">
+                      <img src="./img/Избранное.svg" alt="#">
+                    </div>
+                    <div class="mark scales">
+                      <img src="./img/Сравнение.svg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text">Умные часы SMARTWATCH XM 109 черный</div>
+                <div class="card-price">
+                  <div class="new">12 999 ₽</div>
+                </div>
+                <div class="card-finished">
+                  <div class="counter-wrapper">
+                    <div class="counter" data-counter>
+                      <button class="btn-counter minus">
+                        <img src="./img/minus.svg" alt="#">
+                      </button>
+                      <div class="counter__input"><input type="text" disabled value="0"></div>
+                      <button class="btn-counter plus">
+                        <img src="./img/plus.svg" alt="#">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="basket">
+                    <img src="./img/корзина.svg" alt="#">
+                    <p class="text">В корзину</p>
+                  </button>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="image-slider swiper-container">
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                    <div data-hash="slide-5" class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/xfcs.svg" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="mark-container">
+                    <div class="mark favorites">
+                      <img src="./img/Избранное.svg" alt="#">
+                    </div>
+                    <div class="mark scales">
+                      <img src="./img/Сравнение.svg" alt="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text">Умные часы SMARTWATCH XM 109 черный</div>
+                <div class="card-price">
+                  <div class="new">12 999 ₽</div>
+                </div>
+                <div class="card-finished">
+                  <div class="counter-wrapper">
+                    <div class="counter" data-counter>
+                      <button class="btn-counter minus">
+                        <img src="./img/minus.svg" alt="#">
+                      </button>
+                      <div class="counter__input"><input type="text" disabled value="0"></div>
+                      <button class="btn-counter plus">
+                        <img src="./img/plus.svg" alt="#">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="basket">
+                    <img src="./img/корзина.svg" alt="#">
+                    <p class="text">В корзину</p>
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs tabs-content" id="recently-bought">
+      <h1>Недавно купили</h1>
+    </div>
+    <div class="tabs tabs-content" id="interested">
+      <h1>Вас может заинтересовать</h1>
+    </div>
+  </main>
+  <script  src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

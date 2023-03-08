@@ -1,0 +1,117 @@
+@import './slider';
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("./fonts/Rubik-Bold.woff2"),
+  url("./fonts/Rubik-Bold.woff"),
+  url("./fonts/Rubik-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("./fonts/Rubik-Regular.woff2"),
+  url("./fonts/Rubik-Regular.woff"),
+  url("./fonts/Rubik-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik';
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1608px;
+  margin: 100px auto 0 auto;
+  #popular {
+    overflow: hidden;
+  }
+  .tabs {
+    margin: 0 106px 0 106px;
+  }
+  .tabs-content {
+    justify-content: center;
+    text-align: center;
+    transform: translateY(150px);
+    h1 {
+      color: #c1c1c1;
+    }
+  }
+  .show {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 1579px) {
+  .wrapper-slider__title {
+    .title-navigation {
+      .nav-title {
+        font-size: calc(24px + 10 * ((100vw - 1024px) / (1579 - 1024)));
+      }
+      .nav-link {
+        font-size: calc(20px + 4 * ((100vw - 1024px) / (1579 - 1024)));
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper-slider__title {
+    .title-navigation {
+      .nav-title {
+        font-size: 24px;
+      }
+      .nav-link {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 970px) {
+  .wrapper-slider__title {
+    margin-left: 20px;
+    .title-navigation {
+      flex-direction: column;
+      align-items: start;
+      .nav-link {
+        margin: 5px 0;
+      }
+    }
+  }
+  .main {
+    .tabs {
+      margin: 0 20px;
+    }
+    .btn-slider {
+      display: none;
+    }
+  }
+  .wrapper-slider__slider-line .slider-card {
+      min-width: 260px;
+      .card-finished {
+        margin-bottom: 20px;
+        .counter-wrapper {
+          display: none;
+        }
+        .basket {
+          margin-top: 10px;
+        }
+      }
+  }
+  .wrapper-slider__slider-line .slider-card .image-slider {
+    max-width: 260px;
+  }
+}
